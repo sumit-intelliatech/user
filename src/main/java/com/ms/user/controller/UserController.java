@@ -31,5 +31,11 @@ public class UserController {
         return userservice.getAllUsers();
     }
 
+    //delte bu id
+    @DeleteMapping("/{id}")
+    public void deleteUserById(@PathVariable Integer id) {
+        userservice.deleteUserById(id);
+    }
+
 }
 
